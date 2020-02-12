@@ -1,0 +1,2 @@
+URY:	webpage, showing html, altered by js, to render vuejs, containing tabs, comms to server with websockets, server typescript with node, (taking arguments?), sending to caspar 
+YSTV:	typescript with node, (taking arguments?),running electron, showing html, altered by js, to render vuejs, containing tabs, comms to node internally, sending to caspar

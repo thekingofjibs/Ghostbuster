@@ -1,0 +1,81 @@
+.liveButton {
+    background-color: green;
+    font-size: 1.2vw;
+    flex-grow: 1;
+}
+button {
+    border-radius: 10px;
+    margin: .1vw;
+    font-weight: bold;
+}
+
+div {
+    border-radius: 10px;
+}
+
+.killButton {
+    background-color: red;
+    font-size: 1.2vw;
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 1.4vw;
+    text-decoration: underline;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+}
+
+input {
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1pt;
+    margin-left: 1vw;
+    flex: auto;
+    outline: none;
+    padding-left: .4vw;
+    height: 2vh;
+    width:90%
+}
+
+th {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+td {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.inputDiv {
+    height: 4vh;
+    font-size: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: .5vh;
+    display: inline-flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.buttonDiv{
+    flex-direction: row;
+    display: inline-flex;
+    height: 5vh;
+}
+
+.templateItem {
+    border-width: 2px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    width: 31%;
+}

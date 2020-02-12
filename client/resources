@@ -1,0 +1,20 @@
+function minitree(path, treepart , n, fullpath) {                       //Recursive tree constructor
+  if (path[n+1]=="INDEX"){                                              //if actual template reached
+    treepart.children.push({name: path[n], path: fullpath})
+  } else if (treepart[path[n]] != null){                          
+    minitree(path, treepart[path[n]], n+1, fullpath)
+  } else {
+    treepart[path[n]] = {
+      children: []
+    }
+    minitree(path, treepart[path[n]], n+1, fullpath) //testing
+  }
+}
+
+
+
+//////////    FOLDER STRUCTURE TO AIM FOLDER
+[{"Roses":[{"name":"Scoreboard","path":"Ghostbuster/Roses/Scoreboard/INDEX"},{"name":"Stinger","path":"Ghostbuster/Roses/Stinger/INDEX"}]},{"YSTV Sport":[{"Boxing":[{"name":"Stats Table","path":"Ghostbuster/YSTV Sport/Boxing/Stats Table/INDEX"},{"name":"Winner","path":"Ghostbuster/YSTV Sport/Boxing/Winner/INDEX"}]},{"General":[{"name":"Dual_L3rd","path":"Ghostbuster/YSTV Sport/General/Dual_L3rd/INDEX"},{"name":"Scoreboard","path":"Ghostbuster/YSTV Sport/General/Scoreboard/INDEX"},{"name":"ScoreboardNotification","path":"Ghostbuster/YSTV Sport/General/ScoreboardNotification/INDEX"},{"name":"Single_L3rd","path":"Ghostbuster/YSTV Sport/General/Single_L3rd/INDEX"},{"name":"Stinger","path":"Ghostbuster/YSTV Sport/General/Stinger/INDEX"}]},{"roughs_not_prod_ready":[{"name":"L3rd","path":"Ghostbuster/YSTV Sport/roughs_not_prod_ready/L3rd/INDEX"},{"name":"Scoreboard","path":"Ghostbuster/YSTV Sport/roughs_not_prod_ready/Scoreboard/INDEX"}]}]}]
+
+LESS POINTLESS FOLDER STRUCTURE
+{"Roses":[{"name":"Scoreboard","path":"Ghostbuster/Roses/Scoreboard/INDEX"},{"name":"Stinger","path":"Ghostbuster/Roses/Stinger/INDEX"}],"YSTV Sport":{"Boxing":[{"name":"Stats Table","path":"Ghostbuster/YSTV Sport/Boxing/Stats Table/INDEX"},{"name":"Winner","path":"Ghostbuster/YSTV Sport/Boxing/Winner/INDEX"}],"General":[{"name":"Dual_L3rd","path":"Ghostbuster/YSTV Sport/General/Dual_L3rd/INDEX"},{"name":"Scoreboard","path":"Ghostbuster/YSTV Sport/General/Scoreboard/INDEX"},{"name":"ScoreboardNotification","path":"Ghostbuster/YSTV Sport/General/ScoreboardNotification/INDEX"},{"name":"Single_L3rd","path":"Ghostbuster/YSTV Sport/General/Single_L3rd/INDEX"},{"name":"Stinger","path":"Ghostbuster/YSTV Sport/General/Stinger/INDEX"}],"roughs_not_prod_ready":[{"name":"L3rd","path":"Ghostbuster/YSTV Sport/roughs_not_prod_ready/L3rd/INDEX"},{"name":"Scoreboard","path":"Ghostbuster/YSTV Sport/roughs_not_prod_ready/Scoreboard/INDEX"}]}}

@@ -1,0 +1,119 @@
+{server}(data => FOLDER STRUCTURE([template names, template  types]))
+{name, type}(Data Entry, Live Button, Kill Button, ?Update Button?, Subroutines)
+
+node . --f[older] --a[tem] --c[aspar]
+
+
+
+------ TYPES ------
+- L3rdL
+- L3rdR
+- L3rdM
+- L3rd2
+- L3rd2M
+- U3rdL
+- U3rdR
+- U3rdM
+- 2U3rdC
+- 2U3rdM
+- Sting
+- StingI
+- SOverlay_[n]_
+- AOverlay_[n]_
+- Bug
+- Title
+- HoldingCard
+- HoldingClock
+- TestCard
+- Scoreboard
+- ScoreboardNote
+- Graph
+- Credits
+- Table(/List)
+- TeamLineup
+- Ticker
+- Ticker header
+
+- URYRed3_Candidate Interview Table 3rds
+
+
+FOLDERNAME: TYPE_UNIQUENAME
+
+
+
+------ FOLDERS ------
+--ghostbuster
+	--Roses
+		-Sting
+		-L3rd_interview
+		-L3rd_studio
+		-L3rd_studio2
+		-M3rd
+		-Overlay
+		--Football
+			-Scoreboard
+		--Darts
+				-Scoreboard
+	--Reports
+	--Sport
+	--Drunk Streams
+		-Sting
+		-L3rd
+		-M3rd
+		-Overlay
+		
+
+
+
+server.gbtemplates(
+	[
+	FolderName: "Sport",
+	FolderContents: [{name: "Sport Main", type: "L3rd"}, {name: "Sport 2nd", type: "M3rd"}, ...]
+	],
+	[
+	FolderName: "Reports",
+	FolderContents: [{name: "Report Main", type: "L3rd"}, {name: "Report Title", type: "Title"}, ...]
+	]
+)
+
+
+
+
+server{
+	gbtemplates: [...],
+	info: {...},
+	name: "OB1G",
+	ip: "192.168.0.1",
+	media: [...],
+	connected: FALSE
+}
+
+
+
+
+------ LAYERS ------
+- Thirds = 40
+- Overlay = 42
+- Stings = 50
+- Bugs = 60
+- VTs = 45
+
+
+
+
+
+
+------ TODO ------
+- MultiChanel Support (graphics displays)
+- nested Folder
+- !Proper Configuration
+- !Atem Cut
+- !Sting Clear Channels
+- !ADD IN A HEADER BAR
+- !ADD HEADER HTML
+- !ADD MANUAL REFRESH
+- ADD custom type file
+- !add individual scroll bars
+- !sort qlist
+- !media player looping
+- !proper console logs
