@@ -105,3 +105,5 @@ dist
 
 
 .vs
+
+client/build/
