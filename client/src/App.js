@@ -52,7 +52,7 @@ function App() {
     <div className="App" style={{height:"100%"}}>
       <div className="topBar" style={{height:"8vh", backgroundColor:"grey", borderRadius:"0", display:"flex", flexDirection:"row"}}>
         <h1 style={{fontSize:"5vh", margin:"0", paddingLeft:"1vw", color:"white"}}>
-          Luigi's Mansion 2
+          LM 2
         </h1>
         <img src={logo} style={{height:"inherit", width:"auto"}}></img>
         </div>

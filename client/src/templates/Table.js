@@ -25,19 +25,17 @@ export default function AOverlay (props){
         var numberOfInputs
         var name
         var canExpand = false
-        if (Array.isArray(props.name)){ //add in expandability for rows and columns
+            //add in expandability for rows and columns
             /*if(props.name[0] === 'n'){
                 name = props.name[1]
                 numberOfInputs = 0
                 canExpand = true
             } else { */
-                name = props.name[1]
+                name = props.name[2]
                 numberOfInputs = props.name[0]
+                var numberOfX = props.name[0]
+                var numberOfY = props.name[1]
             //}
-        } else {
-            name = props.name
-            numberOfInputs = 0
-        }
         var inputs = []
         for (let i = 0; i < numberOfInputs; i++) {
             inputs.push("")
