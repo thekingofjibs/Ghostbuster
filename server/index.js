@@ -58,6 +58,8 @@ function minitree(path, treepart , n, fullpath) {
       treepart.push({name: path[n], type: path[n], path: fullpath})
     }else if (path[n].split('_').length == 3){
       treepart.push({name: [path[n].split('_')[1], path[n].split('_')[2]], type: path[n].split('_')[0], path: fullpath})
+    }else if (path[n].split('_').length == 4){
+      treepart.push({name: [path[n].split('_')[1], path[n].split('_')[2], path[n].split('_')[3]], type: path[n].split('_')[0], path: fullpath})
     } 
     else{
       treepart.push({name: path[n].split('_')[1], type: path[n].split('_')[0], path: fullpath})

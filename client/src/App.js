@@ -5,22 +5,26 @@ import './App.css';
 import logo from "./img/icon.png"
 
 
-import L3RDL from "./templates/L3RDL"
+import L3RD from "./templates/L3RD"
 import AOverlay from "./templates/AOverlay"
 import L3RD2 from "./templates/2L3RD"
 import Sting from "./templates/Sting"
 import URYRed3 from "./templates/URYRed3"
 import MediaPlayer from "./templates/MediaPlayer"
 import HoldingClock from "./templates/HoldingClock"
+import Scoreboard from "./templates/Scoreboard"
+import Table from "./templates/Table"
 
 
 const TEMPLATE_MAP = {
   L3RD2,
-  L3RDL,
+  L3RD,
   Sting,
   AOverlay,
   URYRed3,
-  HoldingClock
+  HoldingClock,
+  Scoreboard,
+  Table
 };
 
 function App() {
@@ -28,7 +32,7 @@ function App() {
   const [clsData, setClsData] = useState(null);
   const socket = useRef(null)
   useEffect(() => {
-    socket.current = io.connect("ws://localhost:80");
+    socket.current = io.connect(`ws://${window.location.host}:${window.location.port}`);
     socket.current.on("connect", () => {
       socket.current.on("tlsUpdate", data => {
         console.log(data);

@@ -6,19 +6,11 @@ node . --f[older] --a[tem] --c[aspar]
 
 
 ------ TYPES ------
-- L3rdL
-- L3rdR
-- L3rdM
+- L3rd
 - L3rd2
-- L3rd2M
-- U3rdL
-- U3rdR
-- U3rdM
-- 2U3rdC
-- 2U3rdM
+- U3rd
 - Sting
 - StingI
-- SOverlay_[n]_
 - AOverlay_[n]_
 - Bug
 - Title
@@ -26,6 +18,7 @@ node . --f[older] --a[tem] --c[aspar]
 - HoldingClock
 - TestCard
 - Scoreboard
+- ScoreboardT
 - ScoreboardNote
 - Graph
 - Credits
@@ -34,7 +27,7 @@ node . --f[older] --a[tem] --c[aspar]
 - Ticker
 - Ticker header
 
-- URYRed3_Candidate Interview Table 3rds
+- URYRed3
 
 
 FOLDERNAME: TYPE_UNIQUENAME
@@ -93,6 +86,7 @@ server{
 
 ------ LAYERS ------
 - Thirds = 40
+- Scoreboard = 41
 - Overlay = 42
 - Stings = 50
 - Bugs = 60

@@ -1,6 +1,6 @@
 import React,{useState} from "react"
 
-export default function L3RDL (props){
+export default function L3RD (props){
     const [title, setTitle] = useState("")
     const [subtitle, setSubtitle] = useState("")
 
