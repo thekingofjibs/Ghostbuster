@@ -1,14 +1,14 @@
 # Ghostbuster Graphics Template Framework
  
-Install
+## Install
 - cd server
 - npm install
  
-Run
+## Run
 - cd server
 - npm start -- (OPTIONS)
 
-Options
+## Options
 - -c=(Caspar IP address) REQUIRED
 - -f=(name of folder containing ghostbuster formatted templates for production "..CasparCG/server/template/Ghostbuster/..") REQUIRED
 - -a=(ATEM IP address UNTESTED)
@@ -16,7 +16,7 @@ Options
 CURRENTLY PAGE ONLY ACCESSIBLE ON LOCAL CLIENT
 EXAMPLE TEMPLATES TO COME
 
-Currently Supports
+## Currently Supports
 - L3RD2
 - L3RDL
 - Sting
