@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^10.0.1",
     "@testing-library/user-event": "^10.0.0",
-    "immer": "^6.0.1",
+    "immer": "^8.0.1",
     "react": "^16.12.0",
     "react-beforeunload": "^2.1.0",
     "react-dom": "^16.12.0",
